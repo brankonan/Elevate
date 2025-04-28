@@ -1,7 +1,25 @@
+// Boje
+$primary-color: #ff7e5f;
+$secondary-color: #feb47b;
+$background-color: #f3f3f3;
+$footer-background-color: #222;
+$text-color: #333;
+$white: #fff;
+// Fontovi
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 18px;
+$font-size-heading: 32px;
+$font-size-h1: 48px;
+$font-weight-bold: bold;
+// Cesti stilovi
+$border-radius: 8px;
+$box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: $font-family-base;
+    color: $text-color;
     margin: 0;
     padding: 0;
 }
@@ -16,36 +34,31 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: $box-shadow;
     margin-bottom: 10px;
-
 
     .logo {
         font-size: 24px;
-        font-weight: bold;
-        color: #ff7e5f;
+        font-weight: $font-weight-bold;
+        color: $primary-color;
     }
 
     .nav-links {
         list-style: none;
         padding: 0;
 
-
-
         li {
             display: inline-block;
             margin: 0 10px;
         }
 
-
-
         a {
             text-decoration: none;
-            font-weight: bold;
+            font-weight: $font-weight-bold;
 
 
             &:hover {
-                color: #ff7e5f;
+                color: $primary-color;
             }
         }
     }
@@ -58,14 +71,13 @@ h2 {
     cursor: pointer;
 
     font-size: 18px;
-    font-weight: bold;
-    color: white;
+    font-weight: $font-weight-bold;
+    color: $white;
 
     text-decoration: none;
     border: none;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #ff7e5f, #feb47b);
-
+    border-radius: $border-radius;
+    background: linear-gradient(45deg, $primary-color, $secondary-color);
 
     &:hover {
         box-shadow: 0px 5px 15px rgba(255, 126, 95, 0.4);
@@ -79,18 +91,16 @@ h2 {
     justify-content: space-between;
     padding: 100px 10px;
 
-
     .content {
         width: 50%;
 
-
         h1 {
-            font-size: 48px;
-            color: #ff7e5f;
+            font-size: $font-size-h1;
+            color: $primary-color;
         }
 
         p {
-            font-size: 18px;
+            font-size: $font-size-base;
         }
     }
 
@@ -117,7 +127,7 @@ h2 {
             padding: 20px;
             width: 27%;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: $box-shadow;
         }
     }
 }
@@ -127,7 +137,7 @@ h2 {
     text-align: center;
     padding: 20px;
     background: #222;
-    color: white;
+    color: $white;
 }
 
 /* Responsive */
